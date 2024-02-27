@@ -212,9 +212,23 @@ body, html {
   transition: color 0.3s ease;
 }
 
+.tyre{
+  background-color: #1a6203;
+  opacity: 80%;
+  border-radius: 10px;
+  width: 10%;
+  height: 13%;
+  position: relative;
+}
+
 .front-left {
   top: 15%; /* Adjust as necessary */
   left: 10%; /* Adjust as necessary */
+}
+
+.fl-tyre{
+  top: 95px;
+  left: 85px;
 }
 
 .front-right {
@@ -222,14 +236,29 @@ body, html {
   right: 10%; /* Adjust as necessary */
 }
 
+.fr-tyre{
+  top: 30px;
+  left: 225px;
+}
+
 .rear-left {
   bottom: 15%; /* Adjust as necessary */
   left: 10%; /* Adjust as necessary */
 }
 
+.rl-tyre{
+  top: 220px;
+  left: 85px;
+}
+
 .rear-right {
   bottom: 15%; /* Adjust as necessary */
   right: 10%; /* Adjust as necessary */
+}
+
+.rr-tyre{
+  top: 150px;
+  left: 225px;
 }
 
 .sensors-panel {
@@ -248,4 +277,6 @@ body, html {
 .tire-btn {
   /* Add button styles here */
 }
+
+
 
