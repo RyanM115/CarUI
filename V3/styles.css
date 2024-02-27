@@ -261,6 +261,39 @@ body, html {
   left: 225px;
 }
 
+.driveshaft{
+  background-color: #1a6203;
+  opacity: 80%;
+  border-radius: 2px;
+  width: 5%;
+  height: 45%;
+  position: relative;
+  bottom: 130px;
+  left: 162.5px;
+}
+
+.front-axel{
+  background-color: #1a6203;
+  opacity: 80%;
+  border-radius: 2px;
+  width: 30%;
+  height: 2.5%;
+  position: relative;
+  bottom: 390px;
+  left: 121px;
+}
+
+.rear-axel{
+  background-color: #1a6203;
+  opacity: 80%;
+  border-radius: 2px;
+  width: 30%;
+  height: 2.5%;
+  position: relative;
+  bottom: 140px;
+  left: 120px;
+}
+
 .sensors-panel {
   position: absolute; /* Absolute position for the panel */
   top: 10%;
@@ -274,7 +307,7 @@ body, html {
   border-radius: 30px;
 }
 
-.tire-btn {
+.sensor-btn {
   /* Add button styles here */
 }
 
