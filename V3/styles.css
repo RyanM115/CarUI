@@ -1,0 +1,251 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 2, 37, 0.96);
+  font-family: Arial, sans-serif;
+  color: white;
+    font-size: 30px;
+}
+
+.monitor {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute; /* or 'fixed' if you want it to stay in place on scroll */
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%); /* Centers the element vertically */
+  width: 70vw;
+  height: 90vh;
+  background: #2A2E37;
+}
+
+#diagnosis-button, #home-button{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  background-color: #1a6203;
+  color: white;
+    border: solid white;
+    border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px; /* Adjust to match the new size */
+}
+
+
+.brand-info,
+.climate-control,
+.music-player {
+  font-size: 20px; /* Adjust to your preference */
+}
+
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.car-image {
+  flex-basis: 40%;
+  background: url('TopView.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.divider {
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.96);
+  margin: 40px;
+}
+
+.dashboard {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background: #2A2E37; /* Match this color with your design */
+}
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.brand-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.time {
+  font-size: 1.5em;
+  padding: 0 20px;
+  white-space: nowrap;
+}
+
+.climate-control {
+  display: flex;
+  flex-direction: column;
+    margin-left: 20px;
+    margin-right: 70px;
+  font-size: 25px;
+}
+
+.temperature-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.temperatures {
+  display: flex;
+}
+
+.temperature {
+  text-align: center;
+  margin-right: 20px;
+}
+
+.temperature .value {
+  font-size: 2em;
+  display: block;
+}
+
+.temperature label {
+  display: block;
+  font-size: 0.75em;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  border: 2px solid white; /* If you want to group your buttons with a border */
+  border-radius: 10px; /* Rounded corners for the button group */
+  overflow: hidden; /* Ensures that child elements do not break the rounded corners */
+}
+
+.controls button {
+  background: none;
+  border: none; /* Removes individual button borders */
+  color: white;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  flex: 1; /* Ensures that buttons take up equal space */
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+}
+
+.progress-time {
+  color: white;
+  font-size: 0.75em; /* Adjust as needed */
+}
+
+.progress-bar {
+  flex-grow: 1;
+  height: 4px; /* Height of the progress bar */
+  background: #404040; /* Background of the unplayed part */
+  margin: 0 8px; /* Space between times and bar */
+  position: relative;
+  border-radius: 2px; /* Optional: rounded corners */
+}
+
+.progress {
+  background: #ffffff; /* Color of the played part */
+  height: 100%;
+  border-radius: 2px; /* Optional: rounded corners */
+  width: 50%; /* Example: Set width based on current progress */
+  position: absolute;
+}
+
+.progress-knob {
+  background: #ffffff; /* Color of the knob */
+  width: 12px; /* Width of the knob */
+  height: 12px; /* Height of the knob */
+  border-radius: 50%; /* Make it round */
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Center it on the progress bar */
+  left: 50%; /* Example: Set position based on current progress */
+}
+
+.music-controls{
+    margin-left: 150px;
+}
+
+.music-controls button {
+  background: #ffffff; /* Light background for the button */
+  color: #2A2E37; /* Color that matches your dashboard's theme */
+  border: none;
+  padding: 12px;
+  margin: 10px;
+  border-radius: 20px; /* Rounded corners for the button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s; /* Smooth transition for feedback */
+}
+
+
+.car-image {
+  position: relative; /* Ensure this is set to allow absolute positioning within it */
+  /* Existing styles */
+}
+
+.tire-label {
+  position: absolute;
+  background-color: transparent; /* No background */
+  color: #2a2e37; /* Text color, change if needed */
+  padding: 5px;
+  font-size: 20px; /* Adjust as needed */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.front-left {
+  top: 15%; /* Adjust as necessary */
+  left: 10%; /* Adjust as necessary */
+}
+
+.front-right {
+  top: 15%; /* Adjust as necessary */
+  right: 10%; /* Adjust as necessary */
+}
+
+.rear-left {
+  bottom: 15%; /* Adjust as necessary */
+  left: 10%; /* Adjust as necessary */
+}
+
+.rear-right {
+  bottom: 15%; /* Adjust as necessary */
+  right: 10%; /* Adjust as necessary */
+}
+
+.sensors-panel {
+  position: absolute; /* Absolute position for the panel */
+  top: 10%;
+  right: 2.5%;
+  bottom: 10%;
+  width: 20%; /* Adjust the width as needed to fit the highlighted area */
+  background-color: #2a2e37; /* Or any other color that fits your design */
+  color: #000000;
+  padding: 10px;
+  box-sizing: border-box; /* Include padding in the width */
+  border-radius: 30px;
+}
+
+.tire-btn {
+  /* Add button styles here */
+}
+

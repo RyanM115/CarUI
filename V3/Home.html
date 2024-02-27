@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Dashboard Home</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="monitor">
+    <button id="diagnosis-button">Vehicle Diagnosis</button>
+  <div class="container">
+    <div class="car-image">
+      <!-- The background image will be set in the CSS -->
+    </div>
+    <div class="dashboard">
+  <div class="top-row">
+  <div class="brand-info">
+    <div>Brand</div>
+    <div>Model Type</div>
+  </div>
+  <div class="time">
+  <span id="time-of-day">1:30 PM</span>
+</div>
+</div>
+
+        <div class="divider"></div>
+
+      <div class="climate-control">
+  <div>Climate Control</div>
+  <div class="temperature-controls">
+    <div class="temperatures">
+      <div class="temperature exterior">
+        <span class="value">10°</span>
+        <label for="exterior-temp">Exterior</label>
+      </div>
+      <div class="temperature interior">
+  <span class="value" id="interior-temp">15°</span>
+  <label for="interior-temp">Interior</label>
+</div>
+    </div>
+    <div class="controls">
+  <button id="temp-up">+</button>
+  <button id="temp-down">-</button>
+</div>
+  </div>
+</div>
+
+        <div class="divider"></div>
+
+        <div class="music-player">
+  <div id="song-title">Frank Sinatra - My Way</div>
+  <div class="progress-container">
+  <span class="progress-time" id="current-time">3:13</span>
+  <div class="progress-bar" id="progress-bar">
+    <span class="progress" id="progress"></span>
+    <span class="progress-knob" id="progress-knob"></span>
+  </div>
+  <span class="progress-time" id="total-time">4:36</span>
+</div>
+  <div class="music-controls">
+    <button id="prev-song">«</button>
+    <button id="play-pause">▶</button>
+    <button id="next-song">»</button>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</div>
+
+<script src="homeScript.js"></script>
+
+</body>
+</html>
