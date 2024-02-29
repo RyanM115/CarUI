@@ -15,20 +15,25 @@
 
   <!-- Existing background image -->
   <div class="tire-label front-left">32</div>
-        <div class="tyre fl-tyre"></div>
+        <div id="fl-t" class="tyre fl-tyre"></div>
+        <div id="fl-b" class="brakes fl-brakes"></div>
 
   <div class="tire-label front-right">32</div>
-        <div class="tyre fr-tyre"></div>
+        <div id="fr-t" class="tyre fr-tyre"></div>
+        <div id="fr-b" class="brakes fr-brakes"></div>
 
   <div class="tire-label rear-left">32</div>
-        <div class="tyre rl-tyre"></div>
+        <div id="rl-t" class="tyre rl-tyre"></div>
+        <div id="rl-b" class="brakes rl-brakes"></div>
 
   <div class="tire-label rear-right">32</div>
-        <div class="tyre rr-tyre"></div>
+        <div id="rr-t" class="tyre rr-tyre"></div>
+        <div id="rr-b" class="brakes rr-brakes"></div>
 
-        <div class="driveshaft"></div>
-        <div class="front-axel"></div>
-        <div class="rear-axel"></div>
+<div id="ds" class="driveshaft"></div><div id="fa" class="front-axel"></div><div id="ra" class="rear-axel"></div>
+
+        <div id="b" class="battery"></div>
+        <div id="r" class="radiator"></div>
 
 </div>
 
@@ -48,6 +53,19 @@
 
         <div class="vehicle-faults">
             <div>Vehicle Faults</div>
+            <div id="flte" class="faults" style="display: none;">Front Left Tyre</div>
+            <div id="frte" class="faults" style="display: none;">Front Right Tyre</div>
+            <div id="rlte" class="faults" style="display: none;">Rear Left Tyre</div>
+            <div id="rrte" class="faults" style="display: none;">Rear Right Tyre</div>
+
+            <div id="flbe" class="faults" style="display: none;">Front Left Brakes</div>
+            <div id="frbe" class="faults" style="display: none;">Front Right Brakes</div>
+            <div id="rlbe" class="faults" style="display: none;">Rear Left Brakes</div>
+            <div id="rrbe" class="faults" style="display: none;">Rear Right Brakes</div>
+
+            <div id="dse" class="faults" style="display: none;">Driveshaft</div>
+            <div id="fae" class="faults" style="display: none;">Front Axel</div>
+            <div id="rae" class="faults" style="display: none;">Rear Axel</div>
         </div>
 
         <div class="divider"></div>
@@ -61,11 +79,24 @@
 <script src="diagnosis.js"></script>
 
 <div class="sensors-panel">
-    <button class="sensor-btn">Driveshaft</button>
-  <button class="sensor-btn" data-tire="front-left">Front Left Tire</button>
-  <button class="sensor-btn" data-tire="front-right">Front Right Tire</button>
-  <button class="sensor-btn" data-tire="rear-left">Rear Left Tire</button>
-  <button class="sensor-btn" data-tire="rear-right">Rear Right Tire</button>
+    <button id="dsb" class="sensor-btn" onclick="dsfault()">Driveshaft</button>
+    <button id="fab"  class="sensor-btn" onclick="fafault()">Front Axel</button>
+    <button id="rab"  class="sensor-btn" onclick="rafault()">Rear Axel</button>
+
+
+  <button id="fltb"  class="sensor-btn" onclick="fltfault()">Front Left Tire</button>
+  <button id="frtb"  class="sensor-btn" onclick="frtfault()">Front Right Tire</button>
+  <button id="rltb"  class="sensor-btn" onclick="rltfault()">Rear Left Tire</button>
+  <button id="rrtb"  class="sensor-btn" onclick="rrtfault()">Rear Right Tire</button>
+
+    <button id="flbb"  class="sensor-btn" onclick="flbfault()">Front Left Brake</button>
+  <button id="frbb"  class="sensor-btn" onclick="frbfault()">Front Right Brake</button>
+  <button id="rlbb"  class="sensor-btn" onclick="rlbfault()">Rear Left Brake</button>
+  <button id="rrbb"  class="sensor-btn" onclick="rrbfault()">Rear Right Brake</button>
+
+    <button id="bb"  class="sensor-btn" onclick="bfault()">Battery</button>
+    <button id="rb"  class="sensor-btn" onclick="rfault()">Radiator</button>
+
 </div>
 
 
