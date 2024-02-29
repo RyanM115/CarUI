@@ -2,6 +2,73 @@ document.getElementById('home-button').addEventListener('click', function() {
   window.location.href = 'Home.html'; // Replace 'index.html' with the URL of your original page
 });
 
+
+function fltfault() {
+  document.getElementById("fl-t").style.backgroundColor = "red";
+  var text = document.getElementById("flte");
+  text.style.display = "block";
+}
+function frtfault() {
+  document.getElementById("fr-t").style.backgroundColor = "red";
+  var text = document.getElementById("frte");
+  text.style.display = "block";
+}
+function rltfault() {
+  document.getElementById("rl-t").style.backgroundColor = "red";
+  var text = document.getElementById("rlte");
+  text.style.display = "block";
+}
+function rrtfault() {
+  document.getElementById("rr-t").style.backgroundColor = "red";
+  var text = document.getElementById("rrte");
+  text.style.display = "block";
+}
+function flbfault() {
+  document.getElementById("fl-b").style.backgroundColor = "red";
+  var text = document.getElementById("flbe");
+  text.style.display = "block";
+}
+function frbfault() {
+  document.getElementById("fr-b").style.backgroundColor = "red";
+  var text = document.getElementById("frbe");
+  text.style.display = "block";
+}
+function rlbfault() {
+  document.getElementById("rl-b").style.backgroundColor = "red";
+  var text = document.getElementById("rlbe");
+  text.style.display = "block";
+}
+function rrbfault() {
+  document.getElementById("rr-b").style.backgroundColor = "red";
+  var text = document.getElementById("rrbe");
+  text.style.display = "block";
+}
+function dsfault() {
+  document.getElementById("ds").style.backgroundColor = "red";
+  var text = document.getElementById("dse");
+  text.style.display = "block";
+}
+function fafault() {
+  document.getElementById("fa").style.backgroundColor = "red";
+  var text = document.getElementById("fae");
+  text.style.display = "block";
+}
+function rafault() {
+  document.getElementById("ra").style.backgroundColor = "red";
+  var text = document.getElementById("rae");
+  text.style.display = "block";
+}
+function bfault() {
+  document.getElementById("b").style.backgroundColor = "red";
+  var text = document.getElementById("be");
+  text.style.display = "block";
+}
+function rfault() {
+  document.getElementById("r").style.backgroundColor = "red";
+  var text = document.getElementById("re");
+  text.style.display = "block";
+}
+
  // Function to format time as h:mm AM/PM
   function formatTimeOfDay(date) {
     let hours = date.getHours();
