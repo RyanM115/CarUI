@@ -166,3 +166,4 @@ document.getElementById('play-pause').addEventListener('click', playPauseMusic);
   // Call updateTimeDisplay every second
   setInterval(updateTimeDisplay, 1000);
 
+
