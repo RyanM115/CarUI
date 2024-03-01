@@ -10,6 +10,7 @@ body, html {
     font-size: 30px;
 }
 
+
 .monitor {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -345,6 +346,17 @@ body, html {
   left: 40%; /* Adjust as necessary */
 }
 
+.engine{
+  background-color: #1a6203;
+  opacity: 80%;
+  border-radius: 2px;
+  width: 20%;
+  height: 8%;
+  position: absolute;
+  top: 15%; /* Adjust as necessary */
+  left: 42%; /* Adjust as necessary */
+}
+
 .faults{
   color: red;
   font-size: x-large;
@@ -366,6 +378,3 @@ body, html {
 .sensor-btn {
   /* Add button styles here */
 }
-
-
-
