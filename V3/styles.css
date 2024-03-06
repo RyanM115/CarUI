@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
 body, html {
   height: 100%;
   margin: 0;
@@ -232,8 +234,9 @@ body, html {
 }
 
 .front-left {
-  top: 18%; /* Adjust as necessary */
-  left: 10%; /* Adjust as necessary */
+  font-size: large;
+  top: 20%; /* Adjust as necessary */
+  left: 5%; /* Adjust as necessary */
 }
 
 .fl-tyre{
@@ -247,8 +250,9 @@ body, html {
 }
 
 .front-right {
-  top: 18%; /* Adjust as necessary */
-  right: 10%; /* Adjust as necessary */
+  font-size: large;
+  top: 20%; /* Adjust as necessary */
+  right: 5%; /* Adjust as necessary */
 }
 
 .fr-tyre{
@@ -262,8 +266,9 @@ body, html {
 }
 
 .rear-left {
-  bottom: 18%; /* Adjust as necessary */
-  left: 10%; /* Adjust as necessary */
+  font-size: large;
+  bottom: 20%; /* Adjust as necessary */
+  left: 5%; /* Adjust as necessary */
 }
 
 .rl-tyre{
@@ -277,8 +282,9 @@ body, html {
 }
 
 .rear-right {
-  bottom: 18%; /* Adjust as necessary */
-  right: 10%; /* Adjust as necessary */
+  font-size: large;
+  bottom: 20%; /* Adjust as necessary */
+  right: 5%; /* Adjust as necessary */
 }
 
 .rr-tyre{
@@ -357,9 +363,13 @@ body, html {
   left: 42%; /* Adjust as necessary */
 }
 
+.vehicle-faults{
+  height: 30%;
+}
+
 .faults{
   color: red;
-  font-size: x-large;
+  font-size: calc(15px + 0.390625vw);
 }
 
 .sensors-panel {
@@ -378,3 +388,4 @@ body, html {
 .sensor-btn {
   /* Add button styles here */
 }
+
