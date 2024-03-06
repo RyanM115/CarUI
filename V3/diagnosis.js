@@ -27,7 +27,7 @@ function rrtfault() {
 function lpfltfault() {
   document.getElementById("fl-t").style.backgroundColor = "orange";
   var x = document.getElementById("lpflt");
-  x.innerHTML = "22";
+  x.innerHTML = "22psi";
   var text = document.getElementById("lpflte");
   text.style.display = "block";
 
@@ -35,21 +35,21 @@ function lpfltfault() {
 function lpfrtfault() {
   document.getElementById("fr-t").style.backgroundColor = "orange";
   var x = document.getElementById("lpfrt");
-  x.innerHTML = "22";
+  x.innerHTML = "22psi";
   var text = document.getElementById("lpfrte");
   text.style.display = "block";
 }
 function lprltfault() {
   document.getElementById("rl-t").style.backgroundColor = "orange";
   var x = document.getElementById("lprlt");
-  x.innerHTML = "22";
+  x.innerHTML = "22psi";
   var text = document.getElementById("lprlte");
   text.style.display = "block";
 }
 function lprrtfault() {
   document.getElementById("rr-t").style.backgroundColor = "orange";
   var x = document.getElementById("lprrt");
-  x.innerHTML = "22";
+  x.innerHTML = "22psi";
   var text = document.getElementById("lprrte");
   text.style.display = "block";
 }
@@ -146,4 +146,5 @@ updateCurrentTime();
     const remainingSeconds = seconds % 60;
     return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
   }
+
 
