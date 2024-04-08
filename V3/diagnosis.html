@@ -9,6 +9,14 @@
 <body>
 <div class="monitor">
 
+    <div class='ripple-background'>
+    <div class='circle xxlarge shade1'></div>
+    <div class='circle xlarge shade2'></div>
+    <div class='circle large shade3'></div>
+    <div class='circle mediun shade4'></div>
+    <div class='circle small shade5'></div>
+  </div>
+
     <button id="home-button">Home</button>
 
   <div class="container">
@@ -78,14 +86,18 @@
             <div id="ee" class="faults" style="display: none;">Engine Fault</div>
             <div id="re" class="faults" style="display: none;">Radiator Fault</div>
             <div id="be" class="faults" style="display: none;">Battery Fault</div>
+
+            <div id="engine-overheat" class="faults" style="display: none;">Engine Overheating Fault</div>
+
         </div>
 
         <div class="divider"></div>
 
         <div>Vehicle Temperature</div>
 
-
-
+        <div class="temperature-gauge">
+            <div id="temperature-indicator" class="temperature-gauge-indicator"></div>
+        </div>
 
 </div>
 
@@ -94,10 +106,6 @@
   </div>
 
 <script src="diagnosis.js"></script>
-<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
-<script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
-<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
 
 <div class="sensors-panel">
     <button id="dsb" class="sensor-btn" onclick="dsfault()">Driveshaft</button>
@@ -123,6 +131,9 @@
     <button id="eb"  class="sensor-btn" onclick="efault()">Engine</button>
     <button id="bb"  class="sensor-btn" onclick="bfault()">Battery</button>
     <button id="rb"  class="sensor-btn" onclick="rfault()">Radiator</button>
+
+    <button id="engine-overheat-btn" class="sensor-btn" onclick="engineOverheatFault()">Engine Overheating</button>
+
 
 </div>
 
