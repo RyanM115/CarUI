@@ -120,6 +120,30 @@ function engineOverheatFault() {
 }
 
 
+function updateFluidLevel(fluidType, levelPercentage) {
+  const fluidLevelId = `${fluidType}-level`; // Assuming the ID follows the pattern '{fluidType}-level'
+  const fluidLevelElement = document.getElementById(fluidLevelId);
+
+  if (fluidLevelElement) {
+    fluidLevelElement.style.width = `${levelPercentage}%`;
+
+    // Optionally, adjust color based on the level
+    if (levelPercentage < 25) {
+      fluidLevelElement.style.background = '#f44336'; // Red for low
+    } else if (levelPercentage < 50) {
+      fluidLevelElement.style.background = '#ffeb3b'; // Yellow for medium
+    } else {
+      fluidLevelElement.style.background = '#4caf50'; // Green for high
+    }
+  }
+}
+
+// Example usage
+updateFluidLevel('engine-oil', 95); // Update this based on real or simulated data
+updateFluidLevel('coolant', 45); // Update this based on real or simulated data
+
+
+
 
 
  // Function to format time as h:mm AM/PM
