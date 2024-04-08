@@ -370,6 +370,12 @@ body, html {
 .faults{
   color: red;
   font-size: calc(15px + 0.390625vw);
+  animation: flash 4s infinite;
+}
+
+@keyframes flash {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
 }
 
 .sensors-panel {
@@ -388,4 +394,31 @@ body, html {
 .sensor-btn {
   /* Add button styles here */
 }
+
+
+.temperature-gauge {
+  width: 100%; /* Full width of its container */
+  background: #e6e6e6; /* Grey background */
+  border-radius: 5px;
+  position: relative;
+  height: 3%; /* Height of the gauge */
+  margin: 5% 0;
+}
+
+.temperature-gauge-indicator {
+  width: 45%; /* Initial width, indicating low temperature */
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-image: linear-gradient(to right, #4141d9, green);
+  border-radius: 5px;
+  transition: width 2s ease-in-out; /* Smooth transition for width change */
+}
+
+/* Add a class for overheating color change */
+.temperature-gauge-indicator.overheat {
+  background: #e01506; /* Red, indicating overheating */
+}
+
 
