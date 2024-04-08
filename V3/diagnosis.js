@@ -1,3 +1,4 @@
+
 document.getElementById('home-button').addEventListener('click', function() {
   window.location.href = 'Home.html'; // Replace 'index.html' with the URL of your original page
 });
@@ -105,6 +106,22 @@ function efault() {
   text.style.display = "block";
 }
 
+function engineOverheatFault() {
+  document.getElementById("e").style.backgroundColor = "red"; // This assumes 'e' is the engine indicator element
+  var text = document.getElementById("engine-overheat");
+  text.style.display = "block";
+
+  // Assuming the max temperature width of the gauge is equivalent to 100% of the parent container
+  var maxTemperature = document.querySelector('.temperature-gauge').offsetWidth;
+
+  var temperatureIndicator = document.getElementById("temperature-indicator");
+  temperatureIndicator.style.width = maxTemperature + 'px'; // Set to max to indicate overheating
+  temperatureIndicator.classList.add('overheat');
+}
+
+
+
+
  // Function to format time as h:mm AM/PM
   function formatTimeOfDay(date) {
     let hours = date.getHours();
@@ -146,5 +163,3 @@ updateCurrentTime();
     const remainingSeconds = seconds % 60;
     return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
   }
-
-
