@@ -364,7 +364,7 @@ body, html {
 }
 
 .vehicle-faults{
-  height: 30%;
+  height: 25%;
 }
 
 .faults{
@@ -402,7 +402,7 @@ body, html {
   border-radius: 5px;
   position: relative;
   height: 3%; /* Height of the gauge */
-  margin: 5% 0;
+  margin: 1% 0;
 }
 
 .temperature-gauge-indicator {
@@ -419,6 +419,40 @@ body, html {
 /* Add a class for overheating color change */
 .temperature-gauge-indicator.overheat {
   background: #e01506; /* Red, indicating overheating */
+}
+
+
+.fluid-gauges {
+  /*margin: 20px 0;*/
+}
+
+.fluid-gauge {
+  width: 100%;
+  background: #e6e6e6;
+  border-radius: 5px;
+  position: relative;
+  height: 20px;
+  margin: 5% 0;
+}
+
+.fluid-gauge span {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+
+.fluid-level {
+  width: 70%; /* Adjust based on actual level */
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: #008000; /* Adjust the color based on the fluid type */
+  border-radius: 5px;
+  transition: width 2s ease-in-out;
 }
 
 
