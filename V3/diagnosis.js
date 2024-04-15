@@ -1,6 +1,6 @@
 
 document.getElementById('home-button').addEventListener('click', function() {
-  window.location.href = 'Home.html'; // Replace 'index.html' with the URL of your original page
+  window.location.href = 'Home.html';
 });
 
 
@@ -107,66 +107,56 @@ function efault() {
 }
 
 function engineOverheatFault() {
-  document.getElementById("e").style.backgroundColor = "red"; // This assumes 'e' is the engine indicator element
+  document.getElementById("e").style.backgroundColor = "red";
   var text = document.getElementById("engine-overheat");
   text.style.display = "block";
 
-  // Assuming the max temperature width of the gauge is equivalent to 100% of the parent container
   var maxTemperature = document.querySelector('.temperature-gauge').offsetWidth;
 
   var temperatureIndicator = document.getElementById("temperature-indicator");
-  temperatureIndicator.style.width = maxTemperature + 'px'; // Set to max to indicate overheating
+  temperatureIndicator.style.width = maxTemperature + 'px';
   temperatureIndicator.classList.add('overheat');
 }
 
 
 function updateFluidLevel(fluidType, levelPercentage) {
-  const fluidLevelId = `${fluidType}-level`; // Assuming the ID follows the pattern '{fluidType}-level'
+  const fluidLevelId = `${fluidType}-level`;
   const fluidLevelElement = document.getElementById(fluidLevelId);
 
   if (fluidLevelElement) {
     fluidLevelElement.style.width = `${levelPercentage}%`;
 
-    // Optionally, adjust color based on the level
     if (levelPercentage < 25) {
-      fluidLevelElement.style.background = '#f44336'; // Red for low
+      fluidLevelElement.style.background = '#f44336';
     } else if (levelPercentage < 50) {
-      fluidLevelElement.style.background = '#ffeb3b'; // Yellow for medium
+      fluidLevelElement.style.background = '#ffeb3b';
     } else {
-      fluidLevelElement.style.background = '#4caf50'; // Green for high
+      fluidLevelElement.style.background = '#4caf50';
     }
   }
 }
 
 // Example usage
-updateFluidLevel('engine-oil', 95); // Update this based on real or simulated data
-updateFluidLevel('coolant', 45); // Update this based on real or simulated data
+updateFluidLevel('engine-oil', 95);
+updateFluidLevel('coolant', 45);
 
-
-
-
-
- // Function to format time as h:mm AM/PM
   function formatTimeOfDay(date) {
     let hours = date.getHours();
     let minutes = date.getMinutes();
     const ampm = hours >= 12 ? 'PM' : 'AM';
     hours = hours % 12;
-    hours = hours ? hours : 12; // the hour '0' should be '12'
+    hours = hours ? hours : 12;
     minutes = minutes < 10 ? '0' + minutes : minutes;
     return hours + ':' + minutes + ' ' + ampm;
   }
 
-  // Function to update the time display
   function updateTimeOfDayDisplay() {
     const now = new Date();
       document.getElementById('time-of-day').textContent = formatTimeOfDay(now);
   }
 
-  // Update the time display every minute
   setInterval(updateTimeOfDayDisplay, 60000);
 
-  // Update the time display immediately when the page loads
   updateTimeOfDayDisplay();
 function updateCurrentTime() {
   const now = new Date();
@@ -175,13 +165,10 @@ function updateCurrentTime() {
     document.getElementById('current-time').textContent = `${hours % 12 || 12}:${minutes < 10 ? '0' + minutes : minutes} ${hours >= 12 ? 'PM' : 'AM'}`;
 }
 
-// Update the time every second
 setInterval(updateCurrentTime, 1000);
 
-// Set the time when the page loads
 updateCurrentTime();
 
-  // Function to format time in minutes and seconds
   function formatTime(seconds) {
     const minutes = Math.floor(seconds / 60);
     const remainingSeconds = seconds % 60;
