@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 
 body, html {
   height: 100%;
@@ -17,10 +16,10 @@ body, html {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   overflow: hidden;
-  position: absolute; /* or 'fixed' if you want it to stay in place on scroll */
+  position: absolute;
   top: 50%;
   left: 5%;
-  transform: translateY(-50%); /* Centers the element vertically */
+  transform: translateY(-50%);
   width: 70vw;
   height: 90vh;
   background: #2A2E37;
@@ -36,14 +35,14 @@ body, html {
     border: solid white;
     border-radius: 5px;
   cursor: pointer;
-  font-size: 15px; /* Adjust to match the new size */
+  font-size: 15px;
 }
 
 
 .brand-info,
 .climate-control,
 .music-player {
-  font-size: 20px; /* Adjust to your preference */
+  font-size: 20px;
 }
 
 
@@ -71,7 +70,8 @@ body, html {
   flex-direction: column;
   justify-content: center;
   padding: 20px;
-  background: #2A2E37; /* Match this color with your design */
+  background: #2A2E37;
+  height: 95%;
 }
 .top-row {
   display: flex;
@@ -92,6 +92,7 @@ body, html {
   padding: 0 20px;
   white-space: nowrap;
 }
+
 
 .climate-control {
   display: flex;
@@ -129,19 +130,19 @@ body, html {
 .controls {
   display: flex;
   align-items: center;
-  border: 2px solid white; /* If you want to group your buttons with a border */
-  border-radius: 10px; /* Rounded corners for the button group */
-  overflow: hidden; /* Ensures that child elements do not break the rounded corners */
+  border: 2px solid white;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .controls button {
   background: none;
-  border: none; /* Removes individual button borders */
+  border: none;
   color: white;
   padding: 10px 20px;
   font-size: 1em;
   cursor: pointer;
-  flex: 1; /* Ensures that buttons take up equal space */
+  flex: 1;
 }
 
 .progress-container {
@@ -151,35 +152,35 @@ body, html {
 
 .progress-time {
   color: white;
-  font-size: 0.75em; /* Adjust as needed */
+  font-size: 0.75em;
 }
 
 .progress-bar {
   flex-grow: 1;
-  height: 4px; /* Height of the progress bar */
-  background: #404040; /* Background of the unplayed part */
-  margin: 0 8px; /* Space between times and bar */
+  height: 4px;
+  background: #404040;
+  margin: 0 8px;
   position: relative;
-  border-radius: 2px; /* Optional: rounded corners */
+  border-radius: 2px;
 }
 
 .progress {
-  background: #ffffff; /* Color of the played part */
+  background: #ffffff;
   height: 100%;
-  border-radius: 2px; /* Optional: rounded corners */
-  width: 50%; /* Example: Set width based on current progress */
+  border-radius: 2px;
+  width: 50%;
   position: absolute;
 }
 
 .progress-knob {
-  background: #ffffff; /* Color of the knob */
-  width: 12px; /* Width of the knob */
-  height: 12px; /* Height of the knob */
-  border-radius: 50%; /* Make it round */
+  background: #ffffff;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
   position: absolute;
   top: 50%;
-  transform: translate(-50%, -50%); /* Center it on the progress bar */
-  left: 50%; /* Example: Set position based on current progress */
+  transform: translate(-50%, -50%);
+  left: 50%;
 }
 
 .music-controls{
@@ -187,30 +188,31 @@ body, html {
 }
 
 .music-controls button {
-  background: #ffffff; /* Light background for the button */
-  color: #2A2E37; /* Color that matches your dashboard's theme */
-  border: none;
-  padding: 12px;
-  margin: 10px;
-  border-radius: 20px; /* Rounded corners for the button */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #2A2E37;
+  color: #e6e6e6;
+  border: solid #e6e6e6;
+  padding: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+  left: 20%;
+  border-radius: 10px;
   font-size: 15px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.1s; /* Smooth transition for feedback */
+  position: relative;
 }
 
 
 .car-image {
-  position: relative; /* Ensure this is set to allow absolute positioning within it */
-  /* Existing styles */
+  position: relative;
 }
 
 .tire-label {
   position: absolute;
-  background-color: transparent; /* No background */
-  color: #2a2e37; /* Text color, change if needed */
+  background-color: transparent;
+  color: #2a2e37;
   padding: 5px;
-  font-size: 20px; /* Adjust as needed */
+  font-size: 20px;
   font-weight: bold;
   transition: color 0.3s ease;
 }
@@ -235,8 +237,8 @@ body, html {
 
 .front-left {
   font-size: large;
-  top: 20%; /* Adjust as necessary */
-  left: 5%; /* Adjust as necessary */
+  top: 20%;
+  left: 5%;
 }
 
 .fl-tyre{
@@ -251,8 +253,8 @@ body, html {
 
 .front-right {
   font-size: large;
-  top: 20%; /* Adjust as necessary */
-  right: 5%; /* Adjust as necessary */
+  top: 20%;
+  right: 5%;
 }
 
 .fr-tyre{
@@ -267,8 +269,8 @@ body, html {
 
 .rear-left {
   font-size: large;
-  bottom: 20%; /* Adjust as necessary */
-  left: 5%; /* Adjust as necessary */
+  bottom: 20%;
+  left: 5%;
 }
 
 .rl-tyre{
@@ -283,8 +285,8 @@ body, html {
 
 .rear-right {
   font-size: large;
-  bottom: 20%; /* Adjust as necessary */
-  right: 5%; /* Adjust as necessary */
+  bottom: 20%;
+  right: 5%;
 }
 
 .rr-tyre{
@@ -304,8 +306,8 @@ body, html {
   width: 5%;
   height: 45%;
   position: absolute;
-  bottom: 27%; /* Adjust as necessary */
-  right: 47.5%; /* Adjust as necessary */
+  bottom: 27%;
+  right: 47.5%;
 }
 
 .front-axel{
@@ -315,8 +317,8 @@ body, html {
   width: 27.5%;
   height: 2.5%;
   position: absolute;
-  top: 23.5%; /* Adjust as necessary */
-  right: 36.2%; /* Adjust as necessary */
+  top: 23.5%;
+  right: 36.2%;
 }
 
 .rear-axel{
@@ -326,8 +328,8 @@ body, html {
   width: 27.5%;
   height: 2.5%;
   position: absolute;
-  bottom: 23.5%; /* Adjust as necessary */
-  right: 36.2%; /* Adjust as necessary */
+  bottom: 23.5%;
+  right: 36.2%;
 }
 
 .battery{
@@ -337,8 +339,8 @@ body, html {
   width: 6%;
   height: 8%;
   position: absolute;
-  top: 15%; /* Adjust as necessary */
-  left: 35%; /* Adjust as necessary */
+  top: 15%;
+  left: 36%;
 }
 
 .radiator{
@@ -348,8 +350,8 @@ body, html {
   width: 20%;
   height: 4%;
   position: absolute;
-  top: 10%; /* Adjust as necessary */
-  left: 40%; /* Adjust as necessary */
+  top: 10%;
+  left: 40%;
 }
 
 .engine{
@@ -359,12 +361,13 @@ body, html {
   width: 20%;
   height: 8%;
   position: absolute;
-  top: 15%; /* Adjust as necessary */
-  left: 42%; /* Adjust as necessary */
+  top: 15%;
+  left: 43%;
 }
 
 .vehicle-faults{
   height: 25%;
+  max-height: 30%;
 }
 
 .faults{
@@ -379,51 +382,57 @@ body, html {
 }
 
 .sensors-panel {
-  position: absolute; /* Absolute position for the panel */
-  top: 10%;
+  position: absolute;
+  top: 15%;
   right: 2.5%;
   bottom: 10%;
-  width: 20%; /* Adjust the width as needed to fit the highlighted area */
-  background-color: #2a2e37; /* Or any other color that fits your design */
+  width: 20%;
+  height: 70%;
+  background-color: #2a2e37;
   color: #000000;
   padding: 10px;
-  box-sizing: border-box; /* Include padding in the width */
+  box-sizing: border-box;
   border-radius: 30px;
 }
 
 .sensor-btn {
-  /* Add button styles here */
+  height: 7.5%;
+  border-radius: 10px;
+  border-width: medium;
+  border-style: solid;
+  border-color: #e6e6e6;
+  background-color: #2a2e37;
+  margin: 2%;
+  color: #e6e6e6;
 }
 
 
 .temperature-gauge {
-  width: 100%; /* Full width of its container */
-  background: #e6e6e6; /* Grey background */
+  width: 100%;
+  background: #e6e6e6;
   border-radius: 5px;
   position: relative;
-  height: 3%; /* Height of the gauge */
+  height: 3%;
   margin: 1% 0;
 }
 
 .temperature-gauge-indicator {
-  width: 45%; /* Initial width, indicating low temperature */
+  width: 45%;
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
   background-image: linear-gradient(to right, #4141d9, green);
   border-radius: 5px;
-  transition: width 2s ease-in-out; /* Smooth transition for width change */
+  transition: width 2s ease-in-out;
 }
 
-/* Add a class for overheating color change */
 .temperature-gauge-indicator.overheat {
-  background: #e01506; /* Red, indicating overheating */
+  background: #e01506;
 }
 
 
 .fluid-gauges {
-  /*margin: 20px 0;*/
 }
 
 .fluid-gauge {
@@ -445,14 +454,15 @@ body, html {
 }
 
 .fluid-level {
-  width: 70%; /* Adjust based on actual level */
+  width: 70%;
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
-  background: #008000; /* Adjust the color based on the fluid type */
+  background: #008000;
   border-radius: 5px;
   transition: width 2s ease-in-out;
 }
+
 
 
